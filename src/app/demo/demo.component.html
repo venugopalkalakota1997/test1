@@ -1,0 +1,23 @@
+<div>
+  <button mat-raised-button color="primary" (click)="openDialog()">Add</button>
+</div>
+
+<div class="titleContainer">
+  <div class="fnameTitle">first Name : {{updateUserInfo.fname}}</div>
+  <div class="lnameTitle">Last Name : {{updateUserInfo.lname}}</div>
+  <div class="mobileTitle">Mobile No : {{updateUserInfo.mobile}}</div>
+  
+  <div class="emailTitle">Email: {{updateUserInfo.email}}</div>
+  <div class="addressTitle">Address: {{updateUserInfo.address}}</div>
+  <div class="btn-sec">
+    <button mat-raised-button type="button" color="primary" class="Update-btn" (click)="openDialog()">Edit</button>
+    <button mat-raised-button type="button" class="Discard-btn" (click)="oDialog()">Delete</button>
+  </div>
+
+</div>
+
+<!-- {{updateUserInfo.lname}}
+{{updateUserInfo.mobile}}
+{{updateUserInfo.email}}
+{{updateUserInfo.address}} -->
+<!-- <app-add-customer></app-add-customer> -->
