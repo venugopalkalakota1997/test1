@@ -14,13 +14,7 @@ import { AddService } from '../service/add.service';
 export class AddCustomerComponent implements OnInit {
   @Input() text:any;
   //@Output() searchvalue =new EventEmitter();
-  public breakpoint: number; // Breakpoint observer code
-  public fname: string = ``;
-  public lname: string = ``;
-  public mobile: string = ``;
-  public email: string = ``;
-  public address: string = ``;
-  public addCusForm: FormGroup;
+  
   // addCusForm =new FormGroup({fname:new FormControl(),
   //   lname:new FormControl(),
   //   mobile:new FormControl(),
@@ -35,6 +29,13 @@ export class AddCustomerComponent implements OnInit {
     public dialog: MatDialog,
     private add:AddService
   ) { }
+  public breakpoint: number; // Breakpoint observer code
+  public fname: string = '';
+  public lname: string = ``;
+  public mobile: string = ``;
+  public email: string = ``;
+  public address: string = ``;
+  public addCusForm: FormGroup;
 
   public ngOnInit(): void {
     this.add.getNewUserInfo().subscribe(info => {

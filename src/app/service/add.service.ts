@@ -8,11 +8,11 @@ export class AddService {
 
   constructor() { }
   private newUer = new BehaviorSubject<any>({
-    fname:'VEn',
-   lname: 'hh',
-  mobile: '9876541230',
-   email:  'qq@g',
-   address: 'asdfghj'
+    fname:'',
+   lname: '',
+  mobile: '',
+   email:  '',
+   address: ''
   });
   setNewUserInfo(user: any) {
     //alert(JSON.stringify(user));
