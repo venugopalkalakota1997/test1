@@ -118,5 +118,8 @@
       }
     }
   },
-  "defaultProject": "CompleteAngularMaterialApp"
+  "defaultProject": "CompleteAngularMaterialApp",
+  "cli": {
+    "analytics": "de0912f3-9035-4b63-8c86-4c9e29ef127d"
+  }
 }
