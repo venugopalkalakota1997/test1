@@ -66,7 +66,8 @@ import { MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardM
     MatToolbarModule,
     MatTooltipModule,
     MatNativeDateModule,
-  ]
+  ],
+  imports: [BrowserAnimationsModule]
 })
 export class MaterialModule {}
 
